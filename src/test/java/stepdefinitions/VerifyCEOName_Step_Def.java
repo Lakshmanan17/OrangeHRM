@@ -10,6 +10,7 @@ import io.cucumber.java.en.When;
 import orangeHRM_Page_Objects.DirectoryPage;
 import orangeHRM_Page_Objects.HomePage;
 import orangeHRM_Page_Objects.Loginpage;
+import orangeHRM_Utilities.Common_utils;
 import orangeHRM_Webdriver_Manager.DriverManager;
 import orangeHRM_constants.Constants;
 
@@ -22,15 +23,19 @@ public class VerifyCEOName_Step_Def {
 	 private static final Logger logger = Logger.getLogger(DriverManager.class);
 	@Given("the user is logged in successfully and is on home page")
 	public void the_user_is_logged_in_successfully_and_is_on_home_page() {
-		
+		try {
 		Loginpage.getInstance().enterUserName(Constants.USERNAME);
 		Loginpage.getInstance().enterPassword(Constants.PASSWORD);
 		Loginpage.getInstance().clickLoginButton();
 		String url=DriverManager.getDriver().getCurrentUrl();
-
 		if(url.contains("dashboard")){
-		logger.info(" the user is logged in successfully and is on Home Page");
+			logger.info(" the user is logged in successfully and is on Home Page");
+			}
+		}catch(Exception e) {
+			logger.error(e);
+			 Common_utils.getInstance().takescreenshot();
 		}
+		
 	}
 	 
 	/*  @Given("the user is logged in successfully and is on home page")
@@ -58,8 +63,13 @@ public class VerifyCEOName_Step_Def {
 	@When("the user clicks on the directory option from the menu bar")
 	public void the_user_clicks_on_the_directory_option_from_the_menu_bar() {
 	    // Write code here that turns the phrase above into concrete actions
+		try {
 		HomePage.getInstance().clickDirectory();
 		logger.info("the user clicks on the directory option from the menu bar");
+		}catch(Exception e) {
+			logger.error(e);
+			 Common_utils.getInstance().takescreenshot();
+		}
 	}
 	 
 	/* @When("the user clicks on the directory option from the menu bar")
@@ -89,30 +99,46 @@ public class VerifyCEOName_Step_Def {
 		Select select =new Select(DirectoryPage.JOB_TITLE);
 		select.selectByVisibleText(jobtitle);
   */
+		try {
 		DirectoryPage.getInstance().selectJobTitle();
 		
 		DirectoryPage.getInstance().selectValue(jobtitle);
 		
 		logger.info("the user selects the job title as from the drop down");
+		}catch(Exception e) {
+			logger.error(e);
+			 Common_utils.getInstance().takescreenshot();
+		}
 	}
 
 	@When("clicks the search button")
 	public void clicks_the_search_button() {
 	    // Write code here that turns the phrase above into concrete actions
+		try {
 		DirectoryPage.getInstance().clickSearch();
 		logger.info("clicks the search button");
+		}catch(Exception e) {
+			logger.error(e);
+			 Common_utils.getInstance().takescreenshot();
+		}
 	}
 
 	@Then("the user should see the CEO name as{string}")
 	public void the_user_should_see_the_ceo_name_as_ceo_name(String Expectedname) {
 	    // Write code here that turns the phrase above into concrete actions
-		String actualname=DirectoryPage.getInstance().getPersonName();
+		try{
+			String actualname=DirectoryPage.getInstance().getPersonName();
+		
 		if(actualname.equalsIgnoreCase(Expectedname)) {
 			logger.info("the user should see the CEO name as No record found");
 		}
+	}catch(Exception e) {
 		
+		logger.error(e);
+		 Common_utils.getInstance().takescreenshot();
 	}
 
 
 
+}
 }

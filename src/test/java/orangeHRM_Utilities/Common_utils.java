@@ -1,8 +1,14 @@
 package orangeHRM_Utilities;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import orangeHRM_Page_Objects.DirectoryPage;
@@ -10,10 +16,22 @@ import orangeHRM_Page_Objects.HomePage;
 import orangeHRM_Page_Objects.Loginpage;
 import orangeHRM_Webdriver_Manager.DriverManager;
 import orangeHRM_constants.Constants;
+import stepdefinitions.Common_Step_definition;
 
 
 public class Common_utils {
 
+	private static Common_utils commonUtilsInstance=null;
+	private Common_utils() {
+		
+	}
+	public static Common_utils getInstance() {
+		if(commonUtilsInstance==null) {
+			commonUtilsInstance=new Common_utils();
+		}
+		return commonUtilsInstance;
+		
+	}
     
 
     public void loadproperties() {
@@ -38,11 +56,28 @@ public class Common_utils {
                 
            
             }
-    public static void initWebelements() {
+    public void initWebelements() {
             PageFactory.initElements(DriverManager.getDriver(),Loginpage.getInstance()); 
              PageFactory.initElements(DriverManager.getDriver(),HomePage.getInstance());
              PageFactory.initElements(DriverManager.getDriver(),DirectoryPage.getInstance());
         }
+    
+    public void takescreenshot() {
+    	File screenshot=((TakesScreenshot)DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
+    	try {
+    		FileUtils.copyFile(screenshot,new File(Common_Step_definition.getScenarioName()+".png" ));
+    	}catch(IOException e) {
+    		System.out.println(e.getMessage());
+    	}
+    }
+    
+    public void highlightElement(WebElement element) {
+    	JavascriptExecutor executor=(JavascriptExecutor) DriverManager.getDriver();
+    	executor.executeScript("arguments[0].setAtrribute('style','border: 3px solid red');)",element);
+    }
+    
+    
+    
 }
 
    

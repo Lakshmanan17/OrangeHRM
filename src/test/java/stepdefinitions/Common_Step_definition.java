@@ -2,24 +2,33 @@ package stepdefinitions;
 
 import org.apache.log4j.Logger;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import orangeHRM_Utilities.Common_utils;
 import orangeHRM_Webdriver_Manager.DriverManager;
 import orangeHRM_constants.Constants;
 
 public class Common_Step_definition {
 	 
-	 public static final Logger logger = Logger.getLogger(Common_Step_definition.class);
+	private static String scenarioName=null;
+	
+	 public static String getScenarioName() {
+		return scenarioName;
+	}
+
+
+	public static final Logger logger = Logger.getLogger(Common_Step_definition.class);
 	
 	
 	@Before
-	public void setup() {
+	public void setup(Scenario scenario) {
 		logger.info("Execution Started");
 		try {
+			scenarioName= scenario.getName();
 		logger.info("Instantiated the commonUtils");
 		
-		Common_utils commonutils=new Common_utils();
+		Common_utils.getInstance().loadproperties();
 		logger.info("loading the config properties file");
-		commonutils.loadproperties();
+		
 	   // Constants.BROWSER = "chrome"; // set browser here
 	    logger.info("Checking the Driver is Null or Not?");            
 	    if(DriverManager.getDriver() ==null) {
@@ -28,7 +37,7 @@ public class Common_Step_definition {
 	    DriverManager.getDriver().manage().deleteAllCookies();
 		DriverManager.getDriver().manage().window().maximize();
 	    DriverManager.getDriver().get(Constants.APP_URL);
-	    Common_utils.initWebelements();
+	    Common_utils.getInstance().initWebelements();
 	    }
 	  
 		}

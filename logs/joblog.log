@@ -532,3 +532,88 @@
 2026-02-11 16:44:34 INFO  Common_Step_definition:18 - Instantiated the commonUtils
 2026-02-11 16:44:34 INFO  Common_Step_definition:21 - loading the config properties file
 2026-02-11 16:44:34 INFO  Common_Step_definition:24 - Checking the Driver is Null or Not?
+2026-02-13 17:43:26 INFO  Common_Step_definition:24 - Execution Started
+2026-02-13 17:43:26 INFO  Common_Step_definition:27 - Instantiated the commonUtils
+2026-02-13 17:43:26 INFO  Common_Step_definition:30 - loading the config properties file
+2026-02-13 17:43:26 INFO  Common_Step_definition:33 - Checking the Driver is Null or Not?
+2026-02-13 17:43:26 INFO  Common_Step_definition:35 - Driver is Null. Instatiating it!
+2026-02-13 17:43:29 INFO  DriverManager:29 - Launchingchrome
+2026-02-13 17:44:00 INFO  DriverManager:32 -  the user is logged in successfully and is on Home Page
+2026-02-13 17:44:08 INFO  DriverManager:68 - the user clicks on the directory option from the menu bar
+2026-02-13 17:44:11 INFO  DriverManager:107 - the user selects the job title as from the drop down
+2026-02-13 17:44:11 INFO  DriverManager:119 - clicks the search button
+2026-02-13 17:44:11 INFO  Common_Step_definition:24 - Execution Started
+2026-02-13 17:44:11 INFO  Common_Step_definition:27 - Instantiated the commonUtils
+2026-02-13 17:44:11 INFO  Common_Step_definition:30 - loading the config properties file
+2026-02-13 17:44:11 INFO  Common_Step_definition:33 - Checking the Driver is Null or Not?
+2026-02-13 17:44:20 ERROR Verify_Pending_Timesheets_Step_def:45 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "this.ENTEREMPOLYEENAME" is null
+2026-02-13 17:44:20 ERROR Verify_Pending_Timesheets_Step_def:56 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.getText()" because "this.NAME" is null
+2026-02-13 17:58:18 INFO  Common_Step_definition:24 - Execution Started
+2026-02-13 17:58:18 INFO  Common_Step_definition:27 - Instantiated the commonUtils
+2026-02-13 17:58:18 INFO  Common_Step_definition:30 - loading the config properties file
+2026-02-13 17:58:18 INFO  Common_Step_definition:33 - Checking the Driver is Null or Not?
+2026-02-13 17:58:18 INFO  Common_Step_definition:35 - Driver is Null. Instatiating it!
+2026-02-13 17:58:19 INFO  DriverManager:29 - Launchingchrome
+2026-02-13 17:58:36 INFO  DriverManager:32 -  the user is logged in successfully and is on Home Page
+2026-02-13 17:58:38 INFO  DriverManager:68 - the user clicks on the directory option from the menu bar
+2026-02-13 17:58:41 INFO  DriverManager:107 - the user selects the job title as from the drop down
+2026-02-13 17:58:41 ERROR DriverManager:121 - org.openqa.selenium.JavascriptException: javascript error: Unexpected token ')'
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4e26fd53323b4699db9e205ad733a3d, executeScript {script=arguments[0].setAtrribute('style','border: 3px solid red');), args=[{element-6066-11e4-a52e-4f735466cecf=f.A1B9EB983B43E890B9E80FC7FCD2B290.d.52E820BEE3CE6B2D7DAC7FEDB6E64D88.e.52}]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64679}, goog:processID: 6408, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64679/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e4e26fd53323b4699db9e205ad733a3d
+2026-02-13 17:58:41 INFO  Common_Step_definition:24 - Execution Started
+2026-02-13 17:58:41 INFO  Common_Step_definition:27 - Instantiated the commonUtils
+2026-02-13 17:58:41 INFO  Common_Step_definition:30 - loading the config properties file
+2026-02-13 17:58:41 INFO  Common_Step_definition:33 - Checking the Driver is Null or Not?
+2026-02-13 17:58:44 ERROR Verify_Pending_Timesheets_Step_def:45 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "this.ENTEREMPOLYEENAME" is null
+2026-02-13 17:58:44 ERROR Verify_Pending_Timesheets_Step_def:56 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.getText()" because "this.NAME" is null
+2026-02-13 18:00:39 INFO  Common_Step_definition:24 - Execution Started
+2026-02-13 18:00:39 INFO  Common_Step_definition:27 - Instantiated the commonUtils
+2026-02-13 18:00:39 INFO  Common_Step_definition:30 - loading the config properties file
+2026-02-13 18:00:39 INFO  Common_Step_definition:33 - Checking the Driver is Null or Not?
+2026-02-13 18:00:39 INFO  Common_Step_definition:35 - Driver is Null. Instatiating it!
+2026-02-13 18:00:40 INFO  DriverManager:29 - Launchingchrome
+2026-02-13 18:01:25 INFO  DriverManager:32 -  the user is logged in successfully and is on Home Page
+2026-02-13 18:01:27 INFO  DriverManager:68 - the user clicks on the directory option from the menu bar
+2026-02-13 18:01:29 INFO  DriverManager:107 - the user selects the job title as from the drop down
+2026-02-13 18:01:29 ERROR DriverManager:121 - org.openqa.selenium.JavascriptException: javascript error: Unexpected token ')'
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2cc0cb28fc273a3911d344137219ddba, executeScript {script=arguments[0].setAtrribute('style','border: 3px solid red');), args=[{element-6066-11e4-a52e-4f735466cecf=f.BD0AC187D670A24237EF7E735F27CB52.d.E825E50F2D5D94FEB1283B80E0239D06.e.54}]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64728}, goog:processID: 11700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64728/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cc0cb28fc273a3911d344137219ddba
+2026-02-13 18:01:29 INFO  Common_Step_definition:24 - Execution Started
+2026-02-13 18:01:29 INFO  Common_Step_definition:27 - Instantiated the commonUtils
+2026-02-13 18:01:29 INFO  Common_Step_definition:30 - loading the config properties file
+2026-02-13 18:01:29 INFO  Common_Step_definition:33 - Checking the Driver is Null or Not?
+2026-02-13 18:01:31 ERROR Verify_Pending_Timesheets_Step_def:45 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "this.ENTEREMPOLYEENAME" is null
+2026-02-13 18:01:31 ERROR Verify_Pending_Timesheets_Step_def:56 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.getText()" because "this.NAME" is null
+2026-02-13 18:21:53 INFO  Common_Step_definition:24 - Execution Started
+2026-02-13 18:21:53 INFO  Common_Step_definition:27 - Instantiated the commonUtils
+2026-02-13 18:21:53 INFO  Common_Step_definition:30 - loading the config properties file
+2026-02-13 18:21:53 INFO  Common_Step_definition:33 - Checking the Driver is Null or Not?
+2026-02-13 18:21:53 INFO  Common_Step_definition:35 - Driver is Null. Instatiating it!
+2026-02-13 18:21:54 INFO  DriverManager:29 - Launchingchrome
+2026-02-13 18:22:53 INFO  DriverManager:32 -  the user is logged in successfully and is on Home Page
+2026-02-13 18:23:00 INFO  DriverManager:68 - the user clicks on the directory option from the menu bar
+2026-02-13 18:23:07 INFO  DriverManager:107 - the user selects the job title as from the drop down
+2026-02-13 18:23:07 ERROR DriverManager:121 - org.openqa.selenium.JavascriptException: javascript error: Unexpected token ')'
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71a5d5b6641ee5ebbd2f516a471cfb6c, executeScript {script=arguments[0].setAtrribute('style','border: 3px solid red');), args=[{element-6066-11e4-a52e-4f735466cecf=f.3759FA772479F827A76E3AA33623184B.d.89AAA65A87E32ACCC7A0710DAA514B36.e.58}]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58256}, goog:processID: 2400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58256/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71a5d5b6641ee5ebbd2f516a471cfb6c
+2026-02-13 18:23:07 INFO  Common_Step_definition:24 - Execution Started
+2026-02-13 18:23:07 INFO  Common_Step_definition:27 - Instantiated the commonUtils
+2026-02-13 18:23:07 INFO  Common_Step_definition:30 - loading the config properties file
+2026-02-13 18:23:07 INFO  Common_Step_definition:33 - Checking the Driver is Null or Not?
+2026-02-13 18:23:18 ERROR Verify_Pending_Timesheets_Step_def:45 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "this.ENTEREMPOLYEENAME" is null
+2026-02-13 18:23:18 ERROR Verify_Pending_Timesheets_Step_def:56 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.getText()" because "this.NAME" is null

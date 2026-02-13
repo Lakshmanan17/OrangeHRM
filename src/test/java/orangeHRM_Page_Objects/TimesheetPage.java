@@ -3,6 +3,8 @@ package orangeHRM_Page_Objects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import orangeHRM_Utilities.Common_utils;
+
 public class TimesheetPage {
 	
 	private static TimesheetPage TimesheetInstance;
@@ -32,6 +34,7 @@ public class TimesheetPage {
     }
     
     public void viewName() {
+    	Common_utils.getInstance().highlightElement(VIEW);
     	VIEW.click();
     }
     

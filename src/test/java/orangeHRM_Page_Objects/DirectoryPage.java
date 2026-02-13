@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import orangeHRM_Utilities.Common_utils;
 import orangeHRM_Webdriver_Manager.DriverManager;
 
 public class DirectoryPage {
@@ -58,12 +59,14 @@ public class DirectoryPage {
 		
 	}
 	public void selectValue(String value) {
+		
 		wait.until(ExpectedConditions.visibilityOf(VALUE));
 		VALUE.isSelected();
 		
 	}
 	
 	public void clickSearch() {
+		Common_utils.getInstance().highlightElement(SEARCH);
 		wait.until(ExpectedConditions.visibilityOf(SEARCH));
 		SEARCH.click();
 		
