@@ -32,7 +32,7 @@ public class VerifyCEOName_Step_Def {
 			}
 		}catch(Exception e) {
 			logger.error(e);
-			 Common_utils.getInstance().takescreenshot();
+			 //Common_utils.getInstance().takescreenshot();
 		}
 		
 	}
@@ -67,7 +67,7 @@ public class VerifyCEOName_Step_Def {
 		logger.info("the user clicks on the directory option from the menu bar");
 		}catch(Exception e) {
 			logger.error(e);
-			 Common_utils.getInstance().takescreenshot();
+			// Common_utils.getInstance().takescreenshot();
 		}
 	}
 	 
@@ -106,7 +106,7 @@ public class VerifyCEOName_Step_Def {
 		logger.info("the user selects the job title as from the drop down");
 		}catch(Exception e) {
 			logger.error(e);
-			 Common_utils.getInstance().takescreenshot();
+			// Common_utils.getInstance().takescreenshot();
 		}
 	}
 

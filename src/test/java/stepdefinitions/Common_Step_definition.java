@@ -1,6 +1,10 @@
 package stepdefinitions;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import orangeHRM_Page_Objects.Loginpage;
@@ -55,8 +59,15 @@ public class Common_Step_definition {
 		Loginpage.getInstance().enterPassword(Constants.PASSWORD);
 		Loginpage.getInstance().clickLoginButton();
 	}
-	
+	@AfterStep
+	public void attach_screenshot(Scenario scenario) throws Throwable{
 
+		if(scenario.isFailed()){
+		final byte[] screenshot=((TakesScreenshot)DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
+		scenario.attach(screenshot, "image/png", "screenshot");
+
+		}
+		}
 	
 	
 }

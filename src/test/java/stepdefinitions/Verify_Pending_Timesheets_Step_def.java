@@ -20,7 +20,7 @@ public class Verify_Pending_Timesheets_Step_def {
 	    }
 	   }catch(Exception e){
 		   logger.error(e);
-		   Common_utils.getInstance().takescreenshot();
+		 //  Common_utils.getInstance().takescreenshot();
 	   }
 	}
 
@@ -31,7 +31,7 @@ public class Verify_Pending_Timesheets_Step_def {
 		HomePage.getInstance().clickTime();
 	  }catch(Exception e) {
 		  logger.error(e);
-		  Common_utils.getInstance().takescreenshot();
+		//  Common_utils.getInstance().takescreenshot();
 	  }
 	}
 
@@ -43,7 +43,7 @@ public class Verify_Pending_Timesheets_Step_def {
 		TimesheetPage.getInstance().viewName();
 		}catch(Exception e) {
 			logger.error(e);
-			 Common_utils.getInstance().takescreenshot();
+			// Common_utils.getInstance().takescreenshot();
 		}
 	}
 
@@ -54,7 +54,7 @@ public class Verify_Pending_Timesheets_Step_def {
 		TimesheetPage.getInstance().getPersonName();
 		}catch(Exception e) {
 			logger.error(e);
-			 Common_utils.getInstance().takescreenshot();
+			// Common_utils.getInstance().takescreenshot();
 		}
 	}
 
