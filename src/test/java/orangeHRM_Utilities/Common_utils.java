@@ -72,8 +72,9 @@ public class Common_utils {
     }
     
     public void highlightElement(WebElement element) {
-    	JavascriptExecutor executor=(JavascriptExecutor) DriverManager.getDriver();
-    	executor.executeScript("arguments[0].setAtrribute('style','border: 3px solid red');)",element);
+    	JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
+    	js.executeScript("arguments[0].setAttribute('style','border: 3px solid red');", element);
+
     }
     
     

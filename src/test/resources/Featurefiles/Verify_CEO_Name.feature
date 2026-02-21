@@ -8,4 +8,4 @@ And clicks the search button
 Then the user should see the CEO name as "<CEO_Name>"
 Examples:
 |CEO_Name|
-|JobEdit  TestEmp |
+|No Records Found |

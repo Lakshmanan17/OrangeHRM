@@ -9,7 +9,13 @@ import io.cucumber.testng.CucumberOptions;
 		glue= {"stepdefinitions"},
 		dryRun= false,
 		monochrome= true,
-		plugin = {"pretty","html:report/WebReport","json:report/jsonreport.json" }
+		plugin = {"rerun:failed_scenarios/failed_scenarios.txt",
+				//"pretty","html:report/WebReport","json:report/jsonreport.json",
+				
+				//"html:target/cucumber-reports/report.html"
+				//"json:target/cucumber-reports/report.json"
+				//"testng:target/cucumber-reports/report.xml"
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		 
 		
 		)

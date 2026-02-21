@@ -2,31 +2,30 @@ package stepdefinitions;
 
 import java.time.Duration;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import orangeHRM_Page_Objects.DirectoryPage;
 import orangeHRM_Page_Objects.HomePage;
-import orangeHRM_Page_Objects.Loginpage;
 import orangeHRM_Utilities.Common_utils;
 import orangeHRM_Webdriver_Manager.DriverManager;
-import orangeHRM_constants.Constants;
 
 
 
 
 public class VerifyCEOName_Step_Def {
-	WebDriverWait wait = new WebDriverWait(
-            DriverManager.getDriver(), Duration.ofSeconds(10));
+	//WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(10));
 	 private static final Logger logger = Logger.getLogger(DriverManager.class);
 	@Given("the user is logged in successfully and is on home page")
 	public void the_user_is_logged_in_successfully_and_is_on_home_page() {
 		try {
-		Loginpage.getInstance().enterUserName(Constants.USERNAME);
-		Loginpage.getInstance().enterPassword(Constants.PASSWORD);
-		Loginpage.getInstance().clickLoginButton();
+		
 		String url=DriverManager.getDriver().getCurrentUrl();
 		if(url.contains("dashboard")){
 			logger.info(" the user is logged in successfully and is on Home Page");
@@ -123,22 +122,16 @@ public class VerifyCEOName_Step_Def {
 		}
 	}
 
-	@Then("the user should see the CEO name as{string}")
-	public void the_user_should_see_the_ceo_name_as_ceo_name(String Expectedname) {
-	    // Write code here that turns the phrase above into concrete actions
-		try{
-			String actualname=DirectoryPage.getInstance().getPersonName();
-		
-		if(actualname.equalsIgnoreCase(Expectedname)) {
-			logger.info("the user should see the CEO name as No record found");
-		}
-	}catch(Exception e) {
-		
-		logger.error(e);
-		 Common_utils.getInstance().takescreenshot();
+	@Then("the user should see the CEO name as {string}")
+	public void the_user_should_see_the_ceo_name_as(String expectedName) {
+
+	   String actualName=DirectoryPage.getInstance().getPersonName();
+
+	    //WebElement nameElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@role='row']//div[normalize-space()='" + expectedName + "']")));
+
+	//    String actualName = nameElement.getText().trim();
+
+	    Assert.assertEquals(actualName, expectedName);
 	}
 
-
-
-}
 }

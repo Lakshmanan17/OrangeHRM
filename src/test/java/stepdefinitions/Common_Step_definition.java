@@ -3,6 +3,7 @@ package stepdefinitions;
 import org.apache.log4j.Logger;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import orangeHRM_Page_Objects.Loginpage;
 import orangeHRM_Utilities.Common_utils;
 import orangeHRM_Webdriver_Manager.DriverManager;
 import orangeHRM_constants.Constants;
@@ -36,14 +37,23 @@ public class Common_Step_definition {
 	    DriverManager.launchbrowser();
 	    DriverManager.getDriver().manage().deleteAllCookies();
 		DriverManager.getDriver().manage().window().maximize();
-	    DriverManager.getDriver().get(Constants.APP_URL);
 	    Common_utils.getInstance().initWebelements();
+	    login();
 	    }
 	  
 		}
 		catch(Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+
+	private void login() {
+		// TODO Auto-generated method stub
+		DriverManager.getDriver().get(Constants.APP_URL);
+		Loginpage.getInstance().enterUserName(Constants.USERNAME);
+		Loginpage.getInstance().enterPassword(Constants.PASSWORD);
+		Loginpage.getInstance().clickLoginButton();
 	}
 	
 
