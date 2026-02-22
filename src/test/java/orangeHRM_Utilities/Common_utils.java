@@ -14,6 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 import orangeHRM_Page_Objects.AdminPage;
 import orangeHRM_Page_Objects.DirectoryPage;
 import orangeHRM_Page_Objects.HomePage;
+import orangeHRM_Page_Objects.Job_titlePage;
 import orangeHRM_Page_Objects.Loginpage;
 import orangeHRM_Webdriver_Manager.DriverManager;
 import orangeHRM_constants.Constants;
@@ -62,6 +63,7 @@ public class Common_utils {
              PageFactory.initElements(DriverManager.getDriver(),HomePage.getInstance());
              PageFactory.initElements(DriverManager.getDriver(),DirectoryPage.getInstance());
              PageFactory.initElements(DriverManager.getDriver(),AdminPage.getInstance());
+             PageFactory.initElements(DriverManager.getDriver(),Job_titlePage.getInstance());
         }
     
     public void takescreenshot() {

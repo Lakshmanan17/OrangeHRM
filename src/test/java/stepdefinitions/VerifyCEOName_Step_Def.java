@@ -21,7 +21,7 @@ import orangeHRM_Webdriver_Manager.DriverManager;
 
 public class VerifyCEOName_Step_Def {
 	//WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(10));
-	 private static final Logger logger = Logger.getLogger(DriverManager.class);
+	 private static final Logger logger = Logger.getLogger(VerifyCEOName_Step_Def.class);
 	@Given("the user is logged in successfully and is on home page")
 	public void the_user_is_logged_in_successfully_and_is_on_home_page() {
 		try {

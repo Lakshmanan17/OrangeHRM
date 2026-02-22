@@ -1,1 +1,2 @@
 file:src/test/resources/Featurefiles/Verify_CEO_Name.feature:11
+file:src/test/resources/Featurefiles/Verify_AdminUser_Management.feature:13

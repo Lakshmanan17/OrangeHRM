@@ -1027,3 +1027,49 @@ Session ID: ad539042e510415213e4556e81942461
 2026-02-22 15:56:44 INFO  Common_Step_definition:38 - Checking the Driver is Null or Not?
 2026-02-22 15:56:46 ERROR Verify_Pending_Timesheets_Step_def:45 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "this.ENTEREMPOLYEENAME" is null
 2026-02-22 15:56:46 ERROR Verify_Pending_Timesheets_Step_def:56 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.getText()" because "this.NAME" is null
+2026-02-22 19:06:16 INFO  Common_Step_definition:29 - Execution Started
+2026-02-22 19:06:16 INFO  Common_Step_definition:32 - Instantiated the commonUtils
+2026-02-22 19:06:16 INFO  Common_Step_definition:35 - loading the config properties file
+2026-02-22 19:06:16 INFO  Common_Step_definition:38 - Checking the Driver is Null or Not?
+2026-02-22 19:06:16 INFO  Common_Step_definition:40 - Driver is Null. Instatiating it!
+2026-02-22 19:06:17 INFO  DriverManager:29 - Launchingchrome
+2026-02-22 19:06:35 INFO  Common_Step_definition:29 - Execution Started
+2026-02-22 19:06:35 INFO  Common_Step_definition:32 - Instantiated the commonUtils
+2026-02-22 19:06:35 INFO  Common_Step_definition:35 - loading the config properties file
+2026-02-22 19:06:35 INFO  Common_Step_definition:38 - Checking the Driver is Null or Not?
+2026-02-22 19:06:40 INFO  Common_Step_definition:29 - Execution Started
+2026-02-22 19:06:40 INFO  Common_Step_definition:32 - Instantiated the commonUtils
+2026-02-22 19:06:40 INFO  Common_Step_definition:35 - loading the config properties file
+2026-02-22 19:06:40 INFO  Common_Step_definition:38 - Checking the Driver is Null or Not?
+2026-02-22 19:06:41 INFO  DriverManager:67 - the user clicks on the directory option from the menu bar
+2026-02-22 19:06:42 INFO  DriverManager:106 - the user selects the job title as from the drop down
+2026-02-22 19:06:42 INFO  DriverManager:118 - clicks the search button
+2026-02-22 19:06:42 INFO  Common_Step_definition:29 - Execution Started
+2026-02-22 19:06:42 INFO  Common_Step_definition:32 - Instantiated the commonUtils
+2026-02-22 19:06:42 INFO  Common_Step_definition:35 - loading the config properties file
+2026-02-22 19:06:42 INFO  Common_Step_definition:38 - Checking the Driver is Null or Not?
+2026-02-22 19:06:44 ERROR Verify_Pending_Timesheets_Step_def:45 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "this.ENTEREMPOLYEENAME" is null
+2026-02-22 19:06:44 ERROR Verify_Pending_Timesheets_Step_def:56 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.getText()" because "this.NAME" is null
+2026-02-22 19:13:30 INFO  Common_Step_definition:29 - Execution Started
+2026-02-22 19:13:30 INFO  Common_Step_definition:32 - Instantiated the commonUtils
+2026-02-22 19:13:30 INFO  Common_Step_definition:35 - loading the config properties file
+2026-02-22 19:13:30 INFO  Common_Step_definition:38 - Checking the Driver is Null or Not?
+2026-02-22 19:13:30 INFO  Common_Step_definition:40 - Driver is Null. Instatiating it!
+2026-02-22 19:13:31 INFO  DriverManager:29 - Launchingchrome
+2026-02-22 19:13:47 INFO  Common_Step_definition:29 - Execution Started
+2026-02-22 19:13:47 INFO  Common_Step_definition:32 - Instantiated the commonUtils
+2026-02-22 19:13:47 INFO  Common_Step_definition:35 - loading the config properties file
+2026-02-22 19:13:47 INFO  Common_Step_definition:38 - Checking the Driver is Null or Not?
+2026-02-22 19:13:52 INFO  Common_Step_definition:29 - Execution Started
+2026-02-22 19:13:52 INFO  Common_Step_definition:32 - Instantiated the commonUtils
+2026-02-22 19:13:52 INFO  Common_Step_definition:35 - loading the config properties file
+2026-02-22 19:13:52 INFO  Common_Step_definition:38 - Checking the Driver is Null or Not?
+2026-02-22 19:13:53 INFO  DriverManager:67 - the user clicks on the directory option from the menu bar
+2026-02-22 19:13:55 INFO  DriverManager:106 - the user selects the job title as from the drop down
+2026-02-22 19:13:55 INFO  DriverManager:118 - clicks the search button
+2026-02-22 19:13:55 INFO  Common_Step_definition:29 - Execution Started
+2026-02-22 19:13:55 INFO  Common_Step_definition:32 - Instantiated the commonUtils
+2026-02-22 19:13:55 INFO  Common_Step_definition:35 - loading the config properties file
+2026-02-22 19:13:55 INFO  Common_Step_definition:38 - Checking the Driver is Null or Not?
+2026-02-22 19:13:57 ERROR Verify_Pending_Timesheets_Step_def:45 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because "this.ENTEREMPOLYEENAME" is null
+2026-02-22 19:13:57 ERROR Verify_Pending_Timesheets_Step_def:56 - java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.getText()" because "this.NAME" is null
