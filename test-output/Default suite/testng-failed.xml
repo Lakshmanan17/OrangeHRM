@@ -6,8 +6,8 @@
       <class name="orangeHRM_Runner.Job_runner">
         <methods>
           <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="1"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
         </methods>
       </class> <!-- orangeHRM_Runner.Job_runner -->
     </classes>

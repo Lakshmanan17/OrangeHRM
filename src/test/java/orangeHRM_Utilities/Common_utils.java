@@ -11,6 +11,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+import orangeHRM_Page_Objects.AdminPage;
 import orangeHRM_Page_Objects.DirectoryPage;
 import orangeHRM_Page_Objects.HomePage;
 import orangeHRM_Page_Objects.Loginpage;
@@ -60,6 +61,7 @@ public class Common_utils {
             PageFactory.initElements(DriverManager.getDriver(),Loginpage.getInstance()); 
              PageFactory.initElements(DriverManager.getDriver(),HomePage.getInstance());
              PageFactory.initElements(DriverManager.getDriver(),DirectoryPage.getInstance());
+             PageFactory.initElements(DriverManager.getDriver(),AdminPage.getInstance());
         }
     
     public void takescreenshot() {

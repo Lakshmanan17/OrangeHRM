@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Lakshmanan\AppData\Local\Temp\testng-eclipse-638287480\testng-customsuite.xml</span>
+                    <span>C:\Users\Lakshmanan\AppData\Local\Temp\testng-eclipse-402572465\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="orangeHRM_Runner.Job_runner" class="method navigator-link" hash-for-method="runScenario(&quot;this test is to verify the CEO name&quot;, &quot;this feature is to get the CEO name from the OrangeHRM app&quot;)">runScenario("this test is to verify the CEO name", "this feature is to get the CEO name from the OrangeHRM app")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +117,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="orangeHRM_Runner.Job_runner" class="method navigator-link" hash-for-method="runScenario(&quot;this test is to verify the CEO name&quot;, &quot;this feature is to get the CEO name from the OrangeHRM app&quot;)">runScenario("this test is to verify the CEO name", "this feature is to get the CEO name from the OrangeHRM app")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="orangeHRM_Runner.Job_runner" class="method navigator-link" hash-for-method="runScenario(&quot;This test is to very the pending timesheet&quot;, &quot;This feature is to get pending timesheet&quot;)">runScenario("This test is to very the pending timesheet", "This feature is to get pending timesheet")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="orangeHRM_Runner.Job_runner" class="method navigator-link" hash-for-method="runScenario(&quot;This test is to very the pending timesheet&quot;, &quot;This feature is to get pending timesheet&quot;)">runScenario("This test is to very the pending timesheet", "This feature is to get pending timesheet")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="orangeHRM_Runner.Job_runner" class="method navigator-link" hash-for-method="runScenario(&quot;Search the system users&quot;, &quot;Admin User Management&quot;)">runScenario("Search the system users", "Admin User Management")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -123,9 +137,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">orangeHRM_Runner.Job_runner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -135,10 +149,49 @@
                   </a> <!-- runScenario("this test is to verify the CEO name", "this feature is to get the CEO name from the OrangeHRM app") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("this test is to verify the CEO name","this feature is to get the CEO name from the OrangeHRM app")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;No Records Found&apos;]&quot;}
+  (Session info: chrome=145.0.7632.76)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [152737ae42ba7e56e9cc7ac53f314cf4, findElement {using=xpath, value=//span[text()=&apos;No Records Found&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.76, chrome: {chromedriverVersion: 145.0.7632.77 (da516187054a..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55356}, goog:processID: 6324, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55356/devtoo..., se:cdpVersion: 145.0.7632.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 152737ae42ba7e56e9cc7ac53f314cf4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getText(Unknown Source)
+	at orangeHRM_Page_Objects.DirectoryPage.getPersonName(DirectoryPage.java:76)
+	at stepdefinitions.VerifyCEOName_Step_Def.the_user_should_see_the_ceo_name_as(VerifyCEOName_Step_Def.java:128)
+	at ✽.the user should see the CEO name as &quot;No Records Found&quot;(file:///C:/Users/Lakshmanan/eclipse-workspace/OrangeHRM/src/test/resources/Featurefiles/Verify_CEO_Name.feature:8)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">orangeHRM_Runner.Job_runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;This test is to very the pending timesheet&quot;, &quot;This feature is to get pending timesheet&quot;)">
@@ -149,12 +202,22 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search the system users&quot;, &quot;Admin User Management&quot;)">
+                  </a> <!-- runScenario("Search the system users", "Admin User Management") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search the system users","Admin User Management")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lakshmanan\AppData\Local\Temp\testng-eclipse-638287480\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Lakshmanan\AppData\Local\Temp\testng-eclipse-402572465\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -211,20 +274,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'orangeHRM_Runner.Job_runner')
-data.setCell(0, 3, 17227);
+data.setCell(0, 3, 22391);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'orangeHRM_Runner.Job_runner')
-data.setCell(1, 3, 3006);
+data.setCell(1, 3, 12646);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'orangeHRM_Runner.Job_runner')
+data.setCell(2, 3, 2027);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -252,20 +319,26 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">orangeHRM_Runner.Job_runner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@7b2dd35d)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@27048db3)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">runScenario("Search the system users", "Admin User Management")</span>
+                <span class="method-start">1409 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("this test is to verify the CEO name", "this feature is to get the CEO name from the OrangeHRM app")</span>
-                <span class="method-start">1448 ms</span>
+                <span class="method-start">23804 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("This test is to very the pending timesheet", "This feature is to get pending timesheet")</span>
-                <span class="method-start">18684 ms</span>
+                <span class="method-start">36456 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">21704 ms</span>
+                <span class="method-start">38495 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
