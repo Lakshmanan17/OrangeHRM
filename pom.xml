@@ -22,10 +22,10 @@
   <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-compiler-plugin</artifactId>
-    <version>3.5</version>
+    <version>${maven.compiler.plugin.version}</version>
     <configuration>
-     <source>1.8</source>
-     <target>1.8</target>
+     <source>${maven.compiler.source.version}</source>
+     <target>${maven.compiler.target.version}</target>
     </configuration>
    </plugin>
   
@@ -72,12 +72,14 @@
    
    
 <dependencies>
-<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports >
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<!--
 <dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.0.9</version>
-</dependency -->
+</dependency>
+-->
 
 <dependency>
     <groupId>tech.grasshopper</groupId>
@@ -134,7 +136,6 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.8.0</version>
-    <scope>test</scope>
 </dependency>
 
 <dependency>

@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
 		dryRun= false,
 		monochrome= true,
 		publish=true,
-		plugin = {"rerun:failed_scenarios/failed_scenarios.txt",
+		plugin = {//"rerun:failed_scenarios/failed_scenarios.txt",
 				//"pretty","html:report/WebReport","json:report/jsonreport.json",
 				
 				//"html:target/cucumber-reports/report.html"

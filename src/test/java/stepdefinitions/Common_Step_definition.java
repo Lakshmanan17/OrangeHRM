@@ -36,11 +36,15 @@ public class Common_Step_definition {
 		
 	   // Constants.BROWSER = "chrome"; // set browser here
 	    logger.info("Checking the Driver is Null or Not?");            
-	    if(DriverManager.getDriver() ==null) {
-	    logger.info("Driver is Null. Instatiating it!");
-	    DriverManager.launchbrowser();
-	    DriverManager.getDriver().manage().deleteAllCookies();
-		DriverManager.getDriver().manage().window().maximize();
+					if(DriverManager.getDriver() ==null) {
+					logger.info("Driver is Null. Instatiating it!");
+					DriverManager.launchbrowser();
+					if(DriverManager.getDriver() == null) {
+						// provide a clear error instead of letting a NullPointerException happen later
+						throw new RuntimeException("WebDriver was not created. Check that the browser binary is installed or the CHROME_BINARY_PATH in config.properties is correct.");
+					}
+					DriverManager.getDriver().manage().deleteAllCookies();
+					DriverManager.getDriver().manage().window().maximize();
 	    Common_utils.getInstance().initWebelements();
 	    login();
 	    }

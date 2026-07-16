@@ -55,7 +55,8 @@ public class Common_utils {
                 Constants.CHROME_DRIVER_LOCATION = properties.getProperty("CHROME_DRIVER_LOCATION");
                 Constants.FIREFOX_DRIVER_LOCATION = properties.getProperty("FIREFOX_DRIVER_LOCATION");
                 Constants.EDGE_DRIVER_LOCATION = properties.getProperty("EDGE_DRIVER_LOCATION");
-                
+                Constants.CHROME_BINARY_PATH = properties.getProperty("CHROME_BINARY_PATH");
+
            
             }
     public void initWebelements() {

@@ -5,6 +5,7 @@ public static String CHROME_DRIVER_LOCATION;
 public static String FIREFOX_DRIVER_LOCATION;
 public static String EDGE_DRIVER_LOCATION;
 public static String OPERA_DRIVER_LOCATION;
+public static String CHROME_BINARY_PATH;
 
 public static String CHROME_DRIVER="webdriver.chrome.driver";
 public static String FIREFOX_DRIVER="webdriver.gecko.driver";
