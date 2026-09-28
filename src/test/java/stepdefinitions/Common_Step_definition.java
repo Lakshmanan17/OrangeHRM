@@ -46,7 +46,9 @@ public class Common_Step_definition {
 					DriverManager.getDriver().manage().deleteAllCookies();
 					DriverManager.getDriver().manage().window().maximize();
 	    Common_utils.getInstance().initWebelements();
-	    login();
+	    if (!scenario.getSourceTagNames().contains("@ValidLogin")) {
+	        login();
+	    }
 	    }
 	  
 		}
